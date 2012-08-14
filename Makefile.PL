@@ -53,6 +53,7 @@ my %WriteMakefileArgs = (
     "MooseX::App::Cmd::Command" => 0,
     "MooseX::Role::Loggable" => 0,
     "Path::Class" => 0,
+    "Perl::Version" => 0,
     "String::RewritePrefix" => 0,
     "Try::Tiny" => 0,
     "URI" => 0,
@@ -61,7 +62,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.001",
+  "VERSION" => "0.002",
   "test" => {
     "TESTS" => "t/*.t"
   }

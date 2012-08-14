@@ -1,6 +1,6 @@
 package CPAN::Local::Distribution::Role::MD5;
 {
-  $CPAN::Local::Distribution::Role::MD5::VERSION = '0.001';
+  $CPAN::Local::Distribution::Role::MD5::VERSION = '0.002';
 }
 
 # ABSTRACT: Calculate checksums for a distribution
@@ -20,8 +20,8 @@ sub _build_md5
     return Digest::MD5->new->addfile($fh)->hexdigest;
 }
 
-
 1;
+
 
 __END__
 =pod
@@ -32,7 +32,13 @@ CPAN::Local::Distribution::Role::MD5 - Calculate checksums for a distribution
 
 =head1 VERSION
 
-version 0.001
+version 0.002
+
+=head1 ATTRIBUTES
+
+=head2 md5
+
+Checksum for the distribution archive cacluclated using L<Digest::MD5>.
 
 =head1 AUTHOR
 

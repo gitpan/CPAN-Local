@@ -1,9 +1,9 @@
-package CPAN::Local::Role::Index;
+package CPAN::Local::Role::Cleanup;
 {
-  $CPAN::Local::Role::Index::VERSION = '0.002';
+  $CPAN::Local::Role::Cleanup::VERSION = '0.002';
 }
 
-# ABSTRACT: Index a repo
+# ABSTRACT: Remove orphan files
 
 use strict;
 use warnings;
@@ -11,7 +11,7 @@ use warnings;
 use Moose::Role;
 use namespace::clean -except => 'meta';
 
-requires 'index';
+requires 'cleanup';
 
 1;
 
@@ -21,7 +21,7 @@ __END__
 
 =head1 NAME
 
-CPAN::Local::Role::Index - Index a repo
+CPAN::Local::Role::Cleanup - Remove orphan files
 
 =head1 VERSION
 
@@ -29,22 +29,21 @@ version 0.002
 
 =head1 DESCRIPTION
 
-Plugins implementing this role are executed as part of the update process,
-after the distributions have been physically injected into the repository.
+Plugins implementing this role are executed whenever there is a request to
+clean up unused files in the repository.
 
 =head1 INTERFACE
 
-Plugins implementing this role should provide a C<index> method with the
+Plugins implementing this role should provide a C<cleanup> method with the
 following interface:
 
 =head2 Parameters
 
-None.
+None
 
 =head2 Returns
 
-List of <CPAN::Local::Distribution> objects representing distributions that
-need to be indexed.
+List of paths to files under the repository root that this module knows about.
 
 =head1 AUTHOR
 

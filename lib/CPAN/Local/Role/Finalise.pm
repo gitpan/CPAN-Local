@@ -1,6 +1,6 @@
 package CPAN::Local::Role::Finalise;
 {
-  $CPAN::Local::Role::Finalise::VERSION = '0.001';
+  $CPAN::Local::Role::Finalise::VERSION = '0.002';
 }
 
 # ABSTRACT: Do something after updates complete
@@ -15,6 +15,7 @@ requires 'finalise';
 
 1;
 
+
 __END__
 =pod
 
@@ -24,7 +25,26 @@ CPAN::Local::Role::Finalise - Do something after updates complete
 
 =head1 VERSION
 
-version 0.001
+version 0.002
+
+=head1 DESCRIPTION
+
+Plugins implementing this role are executed after a successful update of a
+repository, i.e. after injection and indexing.
+
+=head1 INTERFACE
+
+Plugins implementing this role should provide a C<finalise> method with the
+following interface:
+
+=head2 Parameters
+
+List of <CPAN::Local::Distribution> objects representing distributions that
+were successfully added to the repository.
+
+=head2 Returns
+
+Nothing.
 
 =head1 AUTHOR
 

@@ -1,6 +1,6 @@
 package CPAN::Local::Role::Prune;
 {
-  $CPAN::Local::Role::Prune::VERSION = '0.001';
+  $CPAN::Local::Role::Prune::VERSION = '0.002';
 }
 
 # ABSTRACT: Remove distributions from selection list
@@ -15,6 +15,7 @@ requires 'prune';
 
 1;
 
+
 __END__
 =pod
 
@@ -24,7 +25,27 @@ CPAN::Local::Role::Prune - Remove distributions from selection list
 
 =head1 VERSION
 
-version 0.001
+version 0.002
+
+=head1 DESCRIPTION
+
+Plugins implementing this role are executed right after the initial list of
+distributions that need to be added is determined, and their purpose is to
+remove any unneeded distributions from that list.
+
+=head1 INTERFACE
+
+Plugins implementing this role should provide a C<prune> method with the
+following interface:
+
+=head2 Parameters
+
+List of L<CPAN::Local::Distribution> objects that are planned for addition.
+
+=head2 Returns
+
+List of L<CPAN::Local::Distribution> objects for addition, with any unneeded
+distributions removed.
 
 =head1 AUTHOR
 

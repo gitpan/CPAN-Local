@@ -1,3 +1,4 @@
+Changes
 LICENSE
 MANIFEST
 META.yml
@@ -19,7 +20,7 @@ lib/CPAN/Local/Plugin.pm
 lib/CPAN/Local/Plugin/Duplicates.pm
 lib/CPAN/Local/Plugin/Indices.pm
 lib/CPAN/Local/Plugin/Inject.pm
-lib/CPAN/Local/Role/Clean.pm
+lib/CPAN/Local/Role/Cleanup.pm
 lib/CPAN/Local/Role/Finalise.pm
 lib/CPAN/Local/Role/Gather.pm
 lib/CPAN/Local/Role/Index.pm

@@ -1,6 +1,6 @@
 package CPAN::Local::App::Command::init;
 {
-  $CPAN::Local::App::Command::init::VERSION = '0.001';
+  $CPAN::Local::App::Command::init::VERSION = '0.002';
 }
 
 # ABSTRACT: Initialize an empty repository
@@ -17,6 +17,7 @@ sub execute
 
 __PACKAGE__->meta->make_immutable;
 
+
 __END__
 =pod
 
@@ -26,7 +27,15 @@ CPAN::Local::App::Command::init - Initialize an empty repository
 
 =head1 VERSION
 
-version 0.001
+version 0.002
+
+=head1 SYNOPSIS
+
+  % lpan init
+
+=head1 DESCRIPTION
+
+Initiate a new repository in the current directory.
 
 =head1 AUTHOR
 

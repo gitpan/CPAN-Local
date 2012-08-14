@@ -1,6 +1,6 @@
 package CPAN::Local::Distribution::Role::NameInfo;
 {
-  $CPAN::Local::Distribution::Role::NameInfo::VERSION = '0.001';
+  $CPAN::Local::Distribution::Role::NameInfo::VERSION = '0.002';
 }
 
 # ABSTRACT: CPAN::DistnameInfo for a distribution
@@ -20,6 +20,7 @@ sub _build_nameinfo
 
 1;
 
+
 __END__
 =pod
 
@@ -29,7 +30,14 @@ CPAN::Local::Distribution::Role::NameInfo - CPAN::DistnameInfo for a distributio
 
 =head1 VERSION
 
-version 0.001
+version 0.002
+
+=head1 ATTRIBUTES
+
+=head2 nameinfo
+
+L<CPAN::DistnameInfo> object built from the distribution's
+L<CPAN::Local::Distribution/path>.
 
 =head1 AUTHOR
 

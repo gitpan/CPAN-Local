@@ -43,6 +43,7 @@ requires:
   MooseX::App::Cmd::Command: 0
   MooseX::Role::Loggable: 0
   Path::Class: 0
+  Perl::Version: 0
   String::RewritePrefix: 0
   Try::Tiny: 0
   URI: 0
@@ -52,4 +53,4 @@ requires:
   warnings: 0
 resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=CPAN-Local
-version: 0.001
+version: 0.002

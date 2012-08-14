@@ -1,6 +1,6 @@
 package CPAN::Local::Plugin::Inject;
 {
-  $CPAN::Local::Plugin::Inject::VERSION = '0.001';
+  $CPAN::Local::Plugin::Inject::VERSION = '0.002';
 }
 
 # ABSTRACT: Inject a distribution into the repo
@@ -43,6 +43,7 @@ sub inject
 
 __PACKAGE__->meta->make_immutable;
 
+
 __END__
 =pod
 
@@ -52,7 +53,22 @@ CPAN::Local::Plugin::Inject - Inject a distribution into the repo
 
 =head1 VERSION
 
-version 0.001
+version 0.002
+
+=head1 IMPLEMENTS
+
+=over
+
+=item L<CPAN::Local::Plugin::Inject>
+
+=back
+
+=head1 METHODS
+
+=head2 inject
+
+Writes the distributition tarballs to the repository and updates the author
+checksums.
 
 =head1 AUTHOR
 

@@ -1,6 +1,6 @@
 package CPAN::Local::Role::Remove;
 {
-  $CPAN::Local::Role::Remove::VERSION = '0.001';
+  $CPAN::Local::Role::Remove::VERSION = '0.002';
 }
 
 # ABSTRACT: Remove distributions from the repo
@@ -15,6 +15,7 @@ requires 'remove';
 
 1;
 
+
 __END__
 =pod
 
@@ -24,7 +25,25 @@ CPAN::Local::Role::Remove - Remove distributions from the repo
 
 =head1 VERSION
 
-version 0.001
+version 0.002
+
+=head1 DESCRIPTION
+
+Plugins implementing this role are executed whenever a whole repository needs
+to be completely removed.
+
+=head1 INTERFACE
+
+Plugins implementing this role should provide a C<remove> method with the
+following interface:
+
+=head2 Parameters
+
+None.
+
+=head2 Returns
+
+Nothing.
 
 =head1 AUTHOR
 

@@ -1,6 +1,6 @@
 package CPAN::Local::Plugin;
 {
-  $CPAN::Local::Plugin::VERSION = '0.001';
+  $CPAN::Local::Plugin::VERSION = '0.002';
 }
 
 # ABSTRACT: Base class for plugins
@@ -39,6 +39,7 @@ sub requires_distribution_roles
 
 __PACKAGE__->meta->make_immutable;
 
+
 __END__
 =pod
 
@@ -48,7 +49,24 @@ CPAN::Local::Plugin - Base class for plugins
 
 =head1 VERSION
 
-version 0.001
+version 0.002
+
+=head1 ATTRIBUTES
+
+=head2 root
+
+Repository root.
+
+=head2 distribution_class
+
+Base class for distribution objects.
+
+=head1 METHODS
+
+=head2 requires_distribution_roles
+
+Empty class method. If overriden in a subclass should return a list of
+distribution roles required by the respective plugin.
 
 =head1 AUTHOR
 

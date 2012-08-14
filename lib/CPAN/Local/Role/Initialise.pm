@@ -1,6 +1,6 @@
 package CPAN::Local::Role::Initialise;
 {
-  $CPAN::Local::Role::Initialise::VERSION = '0.001';
+  $CPAN::Local::Role::Initialise::VERSION = '0.002';
 }
 
 # ABSTRACT: Initialize an empty repo
@@ -15,6 +15,7 @@ requires 'initialise';
 
 1;
 
+
 __END__
 =pod
 
@@ -24,7 +25,25 @@ CPAN::Local::Role::Initialise - Initialize an empty repo
 
 =head1 VERSION
 
-version 0.001
+version 0.002
+
+=head1 DESCRIPTION
+
+Plugins implementing this role are executed whenever a new repository needs
+to be initialised.
+
+=head1 INTERFACE
+
+Plugins implementing this role should provide an C<initialise> method with the
+following interface:
+
+=head2 Parameters
+
+None.
+
+=head2 Returns
+
+Nothing.
 
 =head1 AUTHOR
 

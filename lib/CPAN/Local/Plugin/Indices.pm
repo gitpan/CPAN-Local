@@ -1,6 +1,6 @@
 package CPAN::Local::Plugin::Indices;
 {
-  $CPAN::Local::Plugin::Indices::VERSION = '0.001';
+  $CPAN::Local::Plugin::Indices::VERSION = '0.002';
 }
 
 # ABSTRACT: Update index files
@@ -15,6 +15,7 @@ use File::Path;
 use CPAN::DistnameInfo;
 use Path::Class qw(file dir);
 use URI::file;
+use Perl::Version;
 use Moose;
 extends 'CPAN::Local::Plugin';
 with 'CPAN::Local::Role::Initialise';
@@ -86,7 +87,8 @@ sub index
             if ( my $existing_package = $packages_details->package($package) )
             {
                 $existing_package->version($version)
-                    if $version > $existing_package->version;
+                    if Perl::Version->new($version) >
+                       Perl::Version->new($existing_package->version);
             }
             else
             {
@@ -107,6 +109,8 @@ sub requires_distribution_roles { qw(Metadata) }
 
 __PACKAGE__->meta->make_immutable;
 
+
+
 __END__
 =pod
 
@@ -116,7 +120,38 @@ CPAN::Local::Plugin::Indices - Update index files
 
 =head1 VERSION
 
-version 0.001
+version 0.002
+
+=head1 IMPLEMENTS
+
+=over
+
+=item L<CPAN::Local::Role::Initialise>
+
+=item L<CPAN::Local::Role::Index>
+
+=back
+
+=head1 METHODS
+
+=head2 initialise
+
+Initializes the following index files:
+
+=over
+
+=item C<authors/03mailrc>
+
+=item C<authors/03mailrc>
+
+=item C<authors/03mailrc>
+
+=back
+
+head2 index
+
+Updates C<02packages_details.txt.gz> with information about the
+newly added distributions.
 
 =head1 AUTHOR
 

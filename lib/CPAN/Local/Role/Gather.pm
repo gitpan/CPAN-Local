@@ -1,6 +1,6 @@
 package CPAN::Local::Role::Gather;
 {
-  $CPAN::Local::Role::Gather::VERSION = '0.001';
+  $CPAN::Local::Role::Gather::VERSION = '0.002';
 }
 
 # ABSTRACT: Select distributions to add
@@ -15,6 +15,7 @@ requires 'gather';
 
 1;
 
+
 __END__
 =pod
 
@@ -24,7 +25,26 @@ CPAN::Local::Role::Gather - Select distributions to add
 
 =head1 VERSION
 
-version 0.001
+version 0.002
+
+=head1 DESCRIPTION
+
+Plugins implementing this role are executed at the start of a repository
+update. They determine the list of distributions to add.
+
+=head1 INTERFACE
+
+Plugins implementing this role should provide a C<gather> method with the
+following interface:
+
+=head2 Parameters
+
+None.
+
+=head2 Returns
+
+List of <CPAN::Local::Distribution> objects representing distributions that
+need to be added to the repository.
 
 =head1 AUTHOR
 
