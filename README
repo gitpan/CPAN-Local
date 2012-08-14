@@ -2,7 +2,7 @@ NAME
     CPAN::Local - Hack custom CPAN repos
 
 VERSION
-    version 0.002
+    version 0.003
 
 DESCRIPTION
     CPAN::Local is a framework for creating custom CPAN implementations. The
@@ -41,10 +41,10 @@ ATTRIBUTES
     All plugins requested by the "config", required and instantiated.
 
 METHODS
-  "plugins_with($role_name)"
+  plugins_with($role_name)
     Returns all plugins that implement a given role. Only the last portion
     of the role name should be passed as an argument - i.e. if $role_name is
-    "Index", then all plugins implementing "CPAN::Local::Role::Indexa" will
+    "Index", then all plugins implementing "CPAN::Local::Role::Index" will
     be returned.
 
 AUTHOR

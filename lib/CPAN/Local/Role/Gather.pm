@@ -1,6 +1,6 @@
 package CPAN::Local::Role::Gather;
 {
-  $CPAN::Local::Role::Gather::VERSION = '0.002';
+  $CPAN::Local::Role::Gather::VERSION = '0.003';
 }
 
 # ABSTRACT: Select distributions to add
@@ -25,7 +25,7 @@ CPAN::Local::Role::Gather - Select distributions to add
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 DESCRIPTION
 
@@ -43,7 +43,7 @@ None.
 
 =head2 Returns
 
-List of <CPAN::Local::Distribution> objects representing distributions that
+List of L<CPAN::Local::Distribution> objects representing distributions that
 need to be added to the repository.
 
 =head1 AUTHOR

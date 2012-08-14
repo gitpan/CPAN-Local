@@ -1,6 +1,6 @@
 package CPAN::Local::Role::Cleanup;
 {
-  $CPAN::Local::Role::Cleanup::VERSION = '0.002';
+  $CPAN::Local::Role::Cleanup::VERSION = '0.003';
 }
 
 # ABSTRACT: Remove orphan files
@@ -25,7 +25,7 @@ CPAN::Local::Role::Cleanup - Remove orphan files
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 DESCRIPTION
 
@@ -39,11 +39,12 @@ following interface:
 
 =head2 Parameters
 
-None
+None.
 
 =head2 Returns
 
-List of paths to files under the repository root that this module knows about.
+List of paths to files under the repository root that this module cares about,
+and should not be cleaned.
 
 =head1 AUTHOR
 

@@ -1,6 +1,6 @@
 package CPAN::Local::Plugin::Indices;
 {
-  $CPAN::Local::Plugin::Indices::VERSION = '0.002';
+  $CPAN::Local::Plugin::Indices::VERSION = '0.003';
 }
 
 # ABSTRACT: Update index files
@@ -120,7 +120,7 @@ CPAN::Local::Plugin::Indices - Update index files
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 IMPLEMENTS
 
@@ -140,17 +140,17 @@ Initializes the following index files:
 
 =over
 
-=item C<authors/03mailrc>
+=item C<authors/01mailrc.txt.>
 
-=item C<authors/03mailrc>
+=item C<modules/02packages.details.txt.gz>
 
-=item C<authors/03mailrc>
+=item C<modules/03modlist.data.gz>
 
 =back
 
-head2 index
+=head2 index
 
-Updates C<02packages_details.txt.gz> with information about the
+Updates C<02packages.details.txt.gz> with information for the
 newly added distributions.
 
 =head1 AUTHOR

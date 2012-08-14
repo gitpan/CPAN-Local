@@ -1,6 +1,6 @@
 package CPAN::Local::Role::Finalise;
 {
-  $CPAN::Local::Role::Finalise::VERSION = '0.002';
+  $CPAN::Local::Role::Finalise::VERSION = '0.003';
 }
 
 # ABSTRACT: Do something after updates complete
@@ -25,7 +25,7 @@ CPAN::Local::Role::Finalise - Do something after updates complete
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 DESCRIPTION
 
@@ -39,7 +39,7 @@ following interface:
 
 =head2 Parameters
 
-List of <CPAN::Local::Distribution> objects representing distributions that
+List of L<CPAN::Local::Distribution> objects representing distributions that
 were successfully added to the repository.
 
 =head2 Returns

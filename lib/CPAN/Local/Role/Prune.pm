@@ -1,6 +1,6 @@
 package CPAN::Local::Role::Prune;
 {
-  $CPAN::Local::Role::Prune::VERSION = '0.002';
+  $CPAN::Local::Role::Prune::VERSION = '0.003';
 }
 
 # ABSTRACT: Remove distributions from selection list
@@ -25,7 +25,7 @@ CPAN::Local::Role::Prune - Remove distributions from selection list
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 DESCRIPTION
 

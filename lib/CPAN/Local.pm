@@ -1,6 +1,6 @@
 package CPAN::Local;
 {
-  $CPAN::Local::VERSION = '0.002';
+  $CPAN::Local::VERSION = '0.003';
 }
 
 # ABSTRACT: Hack custom CPAN repos
@@ -160,7 +160,7 @@ CPAN::Local - Hack custom CPAN repos
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 DESCRIPTION
 
@@ -208,11 +208,11 @@ All plugins requested by the L</config>, required and instantiated.
 
 =head1 METHODS
 
-=head2 C<plugins_with($role_name)>
+=head2 plugins_with($role_name)
 
 Returns all plugins that implement a given role. Only the last portion
 of the role name should be passed as an argument - i.e. if C<$role_name>
-is C<Index>, then all plugins implementing C<CPAN::Local::Role::Indexa>
+is C<Index>, then all plugins implementing C<CPAN::Local::Role::Index>
 will be returned.
 
 =head1 AUTHOR

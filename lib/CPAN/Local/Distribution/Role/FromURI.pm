@@ -1,6 +1,6 @@
 package CPAN::Local::Distribution::Role::FromURI;
 {
-  $CPAN::Local::Distribution::Role::FromURI::VERSION = '0.002';
+  $CPAN::Local::Distribution::Role::FromURI::VERSION = '0.003';
 }
 
 # ABSTRACT: Allow distributions to be fetched from remote uris
@@ -68,7 +68,7 @@ CPAN::Local::Distribution::Role::FromURI - Allow distributions to be fetched fro
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 DESCRIPTION
 
@@ -80,7 +80,7 @@ L<CPAN::Local::Distribution/filename> will be set to the local file's name.
   {
     use Moose;
     extends 'CPAN::Local::Distribution';
-    extends 'CPAN::Local::Distribution::Role::FromURI';
+    with 'CPAN::Local::Distribution::Role::FromURI';
   }
 
   package main

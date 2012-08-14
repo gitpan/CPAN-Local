@@ -1,6 +1,6 @@
 package CPAN::Local::Role::Remove;
 {
-  $CPAN::Local::Role::Remove::VERSION = '0.002';
+  $CPAN::Local::Role::Remove::VERSION = '0.003';
 }
 
 # ABSTRACT: Remove distributions from the repo
@@ -25,7 +25,7 @@ CPAN::Local::Role::Remove - Remove distributions from the repo
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 DESCRIPTION
 
