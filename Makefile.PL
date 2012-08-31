@@ -38,6 +38,7 @@ my %WriteMakefileArgs = (
     "Config::MVP::Assembler" => 0,
     "Config::MVP::Assembler::WithBundles" => 0,
     "Config::MVP::Reader::Finder" => 0,
+    "Config::MVP::Reader::INI" => 0,
     "Digest::MD5" => 0,
     "Dist::Metadata" => 0,
     "File::Copy" => 0,
@@ -51,7 +52,7 @@ my %WriteMakefileArgs = (
     "Moose::Role" => 0,
     "MooseX::App::Cmd" => 0,
     "MooseX::App::Cmd::Command" => 0,
-    "MooseX::Role::Loggable" => 0,
+    "MooseX::Role::Loggable" => "0.009",
     "Path::Class" => 0,
     "Perl::Version" => 0,
     "String::RewritePrefix" => 0,
@@ -62,7 +63,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.003",
+  "VERSION" => "0.004",
   "test" => {
     "TESTS" => "t/*.t"
   }

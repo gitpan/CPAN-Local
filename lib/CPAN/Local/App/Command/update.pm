@@ -1,6 +1,6 @@
 package CPAN::Local::App::Command::update;
 {
-  $CPAN::Local::App::Command::update::VERSION = '0.003';
+  $CPAN::Local::App::Command::update::VERSION = '0.004';
 }
 
 # ABSTRACT: Update repository
@@ -53,7 +53,7 @@ CPAN::Local::App::Command::update - Update repository
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 SYNOPSIS
 

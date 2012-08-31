@@ -1,6 +1,6 @@
 package CPAN::Local::App;
 {
-  $CPAN::Local::App::VERSION = '0.003';
+  $CPAN::Local::App::VERSION = '0.004';
 }
 
 # ABSTRACT: CPAN::Local's App::Cmd
@@ -33,7 +33,7 @@ CPAN::Local::App - CPAN::Local's App::Cmd
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 AUTHOR
 

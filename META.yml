@@ -28,6 +28,7 @@ requires:
   Config::MVP::Assembler: 0
   Config::MVP::Assembler::WithBundles: 0
   Config::MVP::Reader::Finder: 0
+  Config::MVP::Reader::INI: 0
   Digest::MD5: 0
   Dist::Metadata: 0
   File::Copy: 0
@@ -41,7 +42,7 @@ requires:
   Moose::Role: 0
   MooseX::App::Cmd: 0
   MooseX::App::Cmd::Command: 0
-  MooseX::Role::Loggable: 0
+  MooseX::Role::Loggable: 0.009
   Path::Class: 0
   Perl::Version: 0
   String::RewritePrefix: 0
@@ -53,4 +54,4 @@ requires:
   warnings: 0
 resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=CPAN-Local
-version: 0.003
+version: 0.004
