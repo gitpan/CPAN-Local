@@ -1,6 +1,6 @@
 package CPAN::Local::Plugin::Indices;
 {
-  $CPAN::Local::Plugin::Indices::VERSION = '0.004';
+  $CPAN::Local::Plugin::Indices::VERSION = '0.005';
 }
 
 # ABSTRACT: Update index files
@@ -120,7 +120,7 @@ CPAN::Local::Plugin::Indices - Update index files
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 IMPLEMENTS
 

@@ -1,6 +1,6 @@
 package CPAN::Local::App::Command::update;
 {
-  $CPAN::Local::App::Command::update::VERSION = '0.004';
+  $CPAN::Local::App::Command::update::VERSION = '0.005';
 }
 
 # ABSTRACT: Update repository
@@ -19,7 +19,7 @@ sub execute
     ### COLLECT DISTRIBUTIONS TO INJECT ###
     foreach my $plugin ( $cpan_local->plugins_with('-Gather') )
     {
-        @distros = $plugin->gather(@distros);
+        push @distros, $plugin->gather(@distros);
     }
 
     ### REMOVE DUPLICATES, ETC. ###
@@ -39,6 +39,12 @@ sub execute
     {
         $plugin->index(@distros);
     }
+
+    ### EXECUTE POST-UPDATE ACTIONS ###
+    foreach my $plugin ( $cpan_local->plugins_with('-Finalise') )
+    {
+        $plugin->finalise(@distros);
+    }
 }
 
 __PACKAGE__->meta->make_immutable;
@@ -53,7 +59,7 @@ CPAN::Local::App::Command::update - Update repository
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 SYNOPSIS
 

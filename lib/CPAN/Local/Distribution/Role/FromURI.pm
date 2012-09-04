@@ -1,6 +1,6 @@
 package CPAN::Local::Distribution::Role::FromURI;
 {
-  $CPAN::Local::Distribution::Role::FromURI::VERSION = '0.004';
+  $CPAN::Local::Distribution::Role::FromURI::VERSION = '0.005';
 }
 
 # ABSTRACT: Allow distributions to be fetched from remote uris
@@ -68,7 +68,7 @@ CPAN::Local::Distribution::Role::FromURI - Allow distributions to be fetched fro
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 DESCRIPTION
 
