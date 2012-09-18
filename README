@@ -2,7 +2,7 @@ NAME
     CPAN::Local - Hack custom CPAN repos
 
 VERSION
-    version 0.005
+    version 0.006
 
 DESCRIPTION
     CPAN::Local is a framework for creating custom CPAN implementations. The

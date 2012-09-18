@@ -29,9 +29,8 @@ my %WriteMakefileArgs = (
   "NAME" => "CPAN::Local",
   "PREREQ_PM" => {
     "CPAN::DistnameInfo" => 0,
-    "CPAN::Index::API" => 0,
+    "CPAN::Index::API" => "0.003",
     "CPAN::Index::API::File::PackagesDetails" => 0,
-    "CPAN::Index::API::Object::Package" => 0,
     "CPAN::Inject" => 0,
     "Carp" => 0,
     "Class::Load" => 0,
@@ -59,11 +58,12 @@ my %WriteMakefileArgs = (
     "Try::Tiny" => 0,
     "URI" => 0,
     "URI::file" => 0,
+    "namespace::autoclean" => 0,
     "namespace::clean" => 0,
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.005",
+  "VERSION" => "0.006",
   "test" => {
     "TESTS" => "t/*.t"
   }

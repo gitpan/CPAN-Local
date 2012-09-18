@@ -1,6 +1,6 @@
 package CPAN::Local::Distribution::Role::MD5;
 {
-  $CPAN::Local::Distribution::Role::MD5::VERSION = '0.005';
+  $CPAN::Local::Distribution::Role::MD5::VERSION = '0.006';
 }
 
 # ABSTRACT: Calculate checksums for a distribution
@@ -32,7 +32,7 @@ CPAN::Local::Distribution::Role::MD5 - Calculate checksums for a distribution
 
 =head1 VERSION
 
-version 0.005
+version 0.006
 
 =head1 ATTRIBUTES
 

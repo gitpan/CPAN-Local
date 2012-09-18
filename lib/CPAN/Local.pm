@@ -1,6 +1,6 @@
 package CPAN::Local;
 {
-  $CPAN::Local::VERSION = '0.005';
+  $CPAN::Local::VERSION = '0.006';
 }
 
 # ABSTRACT: Hack custom CPAN repos
@@ -160,7 +160,7 @@ CPAN::Local - Hack custom CPAN repos
 
 =head1 VERSION
 
-version 0.005
+version 0.006
 
 =head1 DESCRIPTION
 
