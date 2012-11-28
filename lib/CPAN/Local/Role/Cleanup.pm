@@ -1,6 +1,6 @@
 package CPAN::Local::Role::Cleanup;
 {
-  $CPAN::Local::Role::Cleanup::VERSION = '0.006';
+  $CPAN::Local::Role::Cleanup::VERSION = '0.007';
 }
 
 # ABSTRACT: Remove orphan files
@@ -25,7 +25,7 @@ CPAN::Local::Role::Cleanup - Remove orphan files
 
 =head1 VERSION
 
-version 0.006
+version 0.007
 
 =head1 DESCRIPTION
 

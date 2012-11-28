@@ -1,16 +1,14 @@
-package CPAN::Local::Plugin::Indices;
+package CPAN::Local::Plugin::PackagesDetails;
 {
-  $CPAN::Local::Plugin::Indices::VERSION = '0.007';
+  $CPAN::Local::Plugin::PackagesDetails::VERSION = '0.007';
 }
 
-# ABSTRACT: Update index files
+# ABSTRACT: Update 02packages.details.txt
 
 use strict;
 use warnings;
 
-use CPAN::Index::API;
 use CPAN::Index::API::File::PackagesDetails;
-use File::Path;
 use CPAN::DistnameInfo;
 use Path::Class qw(file dir);
 use URI::file;
@@ -39,26 +37,31 @@ has 'auto_provides' =>
     isa => 'Bool',
 );
 
+has 'no_update' =>
+(
+    is  => 'ro',
+    isa => 'Bool',
+);
+
 sub initialise
 {
     my $self = shift;
 
-    File::Path::make_path( dir($self->root)->stringify );
+    dir($self->root)->mkpath;
 
-    my %args = (
+    my $packages_details = CPAN::Index::API::File::PackagesDetails->new(
         repo_path => $self->root,
-        files => [qw(PackagesDetails MailRc ModList)],
+        $self->repo_uri ? ( repo_uri => $self->repo_uri ) : (),
     );
-    $args{repo_uri} = $self->repo_uri if $self->repo_uri;
 
-    my $index = CPAN::Index::API->new(%args);
-
-    $index->write_all_files;
+    $packages_details->write_to_tarball;
 }
 
 sub index
 {
     my ($self, @distros) = @_;
+
+    return if $self->no_update;
 
     my $packages_details =
         CPAN::Index::API::File::PackagesDetails->read_from_repo_path($self->root);
@@ -114,7 +117,7 @@ __END__
 
 =head1 NAME
 
-CPAN::Local::Plugin::Indices - Update index files
+CPAN::Local::Plugin::PackagesDetails - Update 02packages.details.txt
 
 =head1 VERSION
 

@@ -20,6 +20,9 @@ lib/CPAN/Local/Plugin.pm
 lib/CPAN/Local/Plugin/Duplicates.pm
 lib/CPAN/Local/Plugin/Indices.pm
 lib/CPAN/Local/Plugin/Inject.pm
+lib/CPAN/Local/Plugin/MailRc.pm
+lib/CPAN/Local/Plugin/ModList.pm
+lib/CPAN/Local/Plugin/PackagesDetails.pm
 lib/CPAN/Local/Role/Cleanup.pm
 lib/CPAN/Local/Role/Finalise.pm
 lib/CPAN/Local/Role/Gather.pm
@@ -32,6 +35,9 @@ t/00-compile.t
 t/distribution.t
 t/indices.t
 t/inject.t
+t/mailrc.t
+t/modlist.t
+t/packages_details.t
 t/release-eol.t
 t/release-no-tabs.t
 t/release-pod-syntax.t
