@@ -1,6 +1,6 @@
 package CPAN::Local::Plugin::PackagesDetails;
 {
-  $CPAN::Local::Plugin::PackagesDetails::VERSION = '0.008';
+  $CPAN::Local::Plugin::PackagesDetails::VERSION = '0.009';
 }
 
 # ABSTRACT: Update 02packages.details.txt
@@ -129,7 +129,7 @@ CPAN::Local::Plugin::PackagesDetails - Update 02packages.details.txt
 
 =head1 VERSION
 
-version 0.008
+version 0.009
 
 =head1 IMPLEMENTS
 

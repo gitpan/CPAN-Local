@@ -1,6 +1,6 @@
 package CPAN::Local::MVP::Assembler;
 {
-  $CPAN::Local::MVP::Assembler::VERSION = '0.008';
+  $CPAN::Local::MVP::Assembler::VERSION = '0.009';
 }
 
 # ABSTRACT: MVP assembler for CPAN::Local
@@ -47,7 +47,7 @@ CPAN::Local::MVP::Assembler - MVP assembler for CPAN::Local
 
 =head1 VERSION
 
-version 0.008
+version 0.009
 
 =head1 AUTHOR
 

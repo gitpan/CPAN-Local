@@ -2,7 +2,7 @@ NAME
     CPAN::Local - Hack custom CPAN repos
 
 VERSION
-    version 0.008
+    version 0.009
 
 DESCRIPTION
     CPAN::Local is a framework for creating custom CPAN implementations. The
@@ -10,6 +10,11 @@ DESCRIPTION
     plugins, and those plugins can be combined to achieve the desired
     behavior, or new ones can be written where further customizations is
     needed.
+
+    There are other libraries for managing a local CPAN mirror, but while
+    all of them focus on functionality, CPAN::Local focuses entirely on
+    extensibility. It is insipered by Dist::Zilla and attempts to provide
+    sufficient flexibility to acommodate the strangest of needs.
 
     This document describes the "CPAN::Local" class, which represents a
     local repository with plugins configured to perform actions on it.
@@ -46,6 +51,71 @@ METHODS
     of the role name should be passed as an argument - i.e. if $role_name is
     "Index", then all plugins implementing "CPAN::Local::Role::Index" will
     be returned.
+
+SEE ALSO
+  Other libraries for building private CPANs
+    CPAN::Mini and CPAN::Mini::Inject
+    Pinto
+    OrePAN
+    CPAN::Site
+    MyCPAN::App::DPAN
+
+  Useful modules for plugin authors
+    Index files
+
+    CPAN::Index::API
+        Read and write 00whois.xml, 01mailrc.txt, 02packages.details.txt,
+        and 03modlist.data
+
+    PAUSE::Permissions
+        Read 06perms.txt
+
+    CPAN::Indexer::Mirror
+        Write mirror.yml and mirror.json
+
+    File::Rsync::Mirror::Recentfile
+        Read and write RECENT-XX.json files
+
+    Parse::CPAN::MirroredBy
+        Read MIRRORED.BY
+
+    Parse::CPAN::Distributions
+        Read find-ls
+
+    CPAN::Checksums
+        Read and write checksums
+
+    Populating a repository
+
+    CPAN::Inject - Add a distribution tarball to a local mirror
+    CPAN::Cache - Mirror a file from a remote repo
+
+    Distribution metadata
+
+    CPAN::DistnameInfo
+        Parse a distribution filename
+
+    Dist::Metadata
+        Read a distribution META file
+
+    CPAN::ParseDistribution
+        Use regular expressions to find distribution name, version, and
+        provided packages
+
+    Perl::PrereqScanner
+        Use PPI to find a distribution's dependencies
+
+    Module::Depends::Intrusive
+        Execute Makefile.PL/Build.PL to find a distribution's dependencies
+
+    Testing
+
+    CPAN::Faker - Build a dummy repo for testing
+    CPAN::Faker::HTTPD - Build a dummy repo and serve it over http
+
+    Miscellaneous
+
+    CPAN::Visitor - Traverse distributions in a repo
 
 AUTHOR
     Peter Shangov <pshangov@yahoo.com>

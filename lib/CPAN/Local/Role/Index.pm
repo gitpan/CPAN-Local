@@ -1,6 +1,6 @@
 package CPAN::Local::Role::Index;
 {
-  $CPAN::Local::Role::Index::VERSION = '0.008';
+  $CPAN::Local::Role::Index::VERSION = '0.009';
 }
 
 # ABSTRACT: Index a repo
@@ -25,7 +25,7 @@ CPAN::Local::Role::Index - Index a repo
 
 =head1 VERSION
 
-version 0.008
+version 0.009
 
 =head1 DESCRIPTION
 
