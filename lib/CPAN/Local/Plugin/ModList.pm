@@ -1,6 +1,6 @@
 package CPAN::Local::Plugin::ModList;
 {
-  $CPAN::Local::Plugin::ModList::VERSION = '0.007';
+  $CPAN::Local::Plugin::ModList::VERSION = '0.008';
 }
 
 # ABSTRACT: Update 03modlist.data
@@ -36,7 +36,7 @@ CPAN::Local::Plugin::ModList - Update 03modlist.data
 
 =head1 VERSION
 
-version 0.007
+version 0.008
 
 =head1 AUTHOR
 

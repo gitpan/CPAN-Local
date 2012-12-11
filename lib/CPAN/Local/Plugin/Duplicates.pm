@@ -1,6 +1,6 @@
 package CPAN::Local::Plugin::Duplicates;
 {
-  $CPAN::Local::Plugin::Duplicates::VERSION = '0.007';
+  $CPAN::Local::Plugin::Duplicates::VERSION = '0.008';
 }
 
 # ABSTRACT: Remove duplicates
@@ -40,7 +40,7 @@ CPAN::Local::Plugin::Duplicates - Remove duplicates
 
 =head1 VERSION
 
-version 0.007
+version 0.008
 
 =head1 IMPLEMENTS
 

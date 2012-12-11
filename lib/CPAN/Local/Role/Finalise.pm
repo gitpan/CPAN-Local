@@ -1,6 +1,6 @@
 package CPAN::Local::Role::Finalise;
 {
-  $CPAN::Local::Role::Finalise::VERSION = '0.007';
+  $CPAN::Local::Role::Finalise::VERSION = '0.008';
 }
 
 # ABSTRACT: Do something after updates complete
@@ -25,7 +25,7 @@ CPAN::Local::Role::Finalise - Do something after updates complete
 
 =head1 VERSION
 
-version 0.007
+version 0.008
 
 =head1 DESCRIPTION
 

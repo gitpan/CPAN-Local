@@ -1,6 +1,6 @@
 package CPAN::Local::Plugin::Inject;
 {
-  $CPAN::Local::Plugin::Inject::VERSION = '0.007';
+  $CPAN::Local::Plugin::Inject::VERSION = '0.008';
 }
 
 # ABSTRACT: Inject a distribution into the repo
@@ -53,7 +53,7 @@ CPAN::Local::Plugin::Inject - Inject a distribution into the repo
 
 =head1 VERSION
 
-version 0.007
+version 0.008
 
 =head1 IMPLEMENTS
 

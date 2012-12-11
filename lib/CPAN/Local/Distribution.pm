@@ -1,6 +1,6 @@
 package CPAN::Local::Distribution;
 {
-  $CPAN::Local::Distribution::VERSION = '0.007';
+  $CPAN::Local::Distribution::VERSION = '0.008';
 }
 
 # ABSTRACT: Base distribution class
@@ -73,7 +73,7 @@ CPAN::Local::Distribution - Base distribution class
 
 =head1 VERSION
 
-version 0.007
+version 0.008
 
 =head1 ATTRIBUTES
 

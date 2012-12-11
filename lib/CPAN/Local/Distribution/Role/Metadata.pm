@@ -1,6 +1,6 @@
 package CPAN::Local::Distribution::Role::Metadata;
 {
-  $CPAN::Local::Distribution::Role::Metadata::VERSION = '0.007';
+  $CPAN::Local::Distribution::Role::Metadata::VERSION = '0.008';
 }
 
 # ABSTRACT: Read a distribution's metadata
@@ -31,7 +31,7 @@ CPAN::Local::Distribution::Role::Metadata - Read a distribution's metadata
 
 =head1 VERSION
 
-version 0.007
+version 0.008
 
 =head1 ATTRIBUTES
 

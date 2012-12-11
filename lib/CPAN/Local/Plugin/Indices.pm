@@ -1,12 +1,18 @@
 package CPAN::Local::Plugin::Indices;
 {
-  $CPAN::Local::Plugin::Indices::VERSION = '0.007';
+  $CPAN::Local::Plugin::Indices::VERSION = '0.008';
 }
 
-# ABSTRACT: Update index files
+# ABSTRACT: [DEPRECATED] Update index files
 
 use strict;
 use warnings;
+
+BEGIN {
+    warn "CPAN::Local::Plugin::Indices is deprecated. "
+       . "Please use PackagesDetails, ModList and MalRc plugins instead."
+    unless $ENV{HARNESS_ACTIVE};
+}
 
 use CPAN::Index::API;
 use CPAN::Index::API::File::PackagesDetails;
@@ -114,11 +120,11 @@ __END__
 
 =head1 NAME
 
-CPAN::Local::Plugin::Indices - Update index files
+CPAN::Local::Plugin::Indices - [DEPRECATED] Update index files
 
 =head1 VERSION
 
-version 0.007
+version 0.008
 
 =head1 IMPLEMENTS
 

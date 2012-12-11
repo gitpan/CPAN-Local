@@ -1,6 +1,6 @@
 package CPAN::Local::Role::Inject;
 {
-  $CPAN::Local::Role::Inject::VERSION = '0.007';
+  $CPAN::Local::Role::Inject::VERSION = '0.008';
 }
 
 # ABSTRACT: Add selected distributions to a repo
@@ -25,7 +25,7 @@ CPAN::Local::Role::Inject - Add selected distributions to a repo
 
 =head1 VERSION
 
-version 0.007
+version 0.008
 
 =head1 DESCRIPTION
 

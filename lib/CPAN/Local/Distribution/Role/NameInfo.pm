@@ -1,6 +1,6 @@
 package CPAN::Local::Distribution::Role::NameInfo;
 {
-  $CPAN::Local::Distribution::Role::NameInfo::VERSION = '0.007';
+  $CPAN::Local::Distribution::Role::NameInfo::VERSION = '0.008';
 }
 
 # ABSTRACT: CPAN::DistnameInfo for a distribution
@@ -30,7 +30,7 @@ CPAN::Local::Distribution::Role::NameInfo - CPAN::DistnameInfo for a distributio
 
 =head1 VERSION
 
-version 0.007
+version 0.008
 
 =head1 ATTRIBUTES
 

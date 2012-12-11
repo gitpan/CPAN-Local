@@ -1,6 +1,6 @@
 package CPAN::Local::Plugin::PackagesDetails;
 {
-  $CPAN::Local::Plugin::PackagesDetails::VERSION = '0.007';
+  $CPAN::Local::Plugin::PackagesDetails::VERSION = '0.008';
 }
 
 # ABSTRACT: Update 02packages.details.txt
@@ -93,10 +93,18 @@ sub index
             }
             else
             {
+                my $path = file($distro->path);
+
+                # drop 'authors/id' from the distro path
+                my $distribution = file(
+                    $path->dir->dir_list(2),
+                    $path->basename,
+                )->as_foreign('Unix')->stringify;
+
                 $packages_details->add_package({
                     name         => $package,
                     version      => $version,
-                    distribution => $distro->path,
+                    distribution => $distribution,
                 });
             }
         }
@@ -121,7 +129,7 @@ CPAN::Local::Plugin::PackagesDetails - Update 02packages.details.txt
 
 =head1 VERSION
 
-version 0.007
+version 0.008
 
 =head1 IMPLEMENTS
 
