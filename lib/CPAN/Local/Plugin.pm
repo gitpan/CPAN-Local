@@ -1,6 +1,6 @@
 package CPAN::Local::Plugin;
 {
-  $CPAN::Local::Plugin::VERSION = '0.009';
+  $CPAN::Local::Plugin::VERSION = '0.010';
 }
 
 # ABSTRACT: Base class for plugins
@@ -49,7 +49,7 @@ CPAN::Local::Plugin - Base class for plugins
 
 =head1 VERSION
 
-version 0.009
+version 0.010
 
 =head1 ATTRIBUTES
 

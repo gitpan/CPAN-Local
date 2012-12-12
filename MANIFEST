@@ -16,6 +16,7 @@ lib/CPAN/Local/Distribution/Role/MD5.pm
 lib/CPAN/Local/Distribution/Role/Metadata.pm
 lib/CPAN/Local/Distribution/Role/NameInfo.pm
 lib/CPAN/Local/MVP/Assembler.pm
+lib/CPAN/Local/Manual.pod
 lib/CPAN/Local/Plugin.pm
 lib/CPAN/Local/Plugin/Duplicates.pm
 lib/CPAN/Local/Plugin/Indices.pm

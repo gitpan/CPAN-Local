@@ -1,6 +1,6 @@
 package CPAN::Local::Plugin::PackagesDetails;
 {
-  $CPAN::Local::Plugin::PackagesDetails::VERSION = '0.009';
+  $CPAN::Local::Plugin::PackagesDetails::VERSION = '0.010';
 }
 
 # ABSTRACT: Update 02packages.details.txt
@@ -129,7 +129,7 @@ CPAN::Local::Plugin::PackagesDetails - Update 02packages.details.txt
 
 =head1 VERSION
 
-version 0.009
+version 0.010
 
 =head1 IMPLEMENTS
 
@@ -145,17 +145,7 @@ version 0.009
 
 =head2 initialise
 
-Initializes the following index files:
-
-=over
-
-=item C<authors/01mailrc.txt.>
-
-=item C<modules/02packages.details.txt.gz>
-
-=item C<modules/03modlist.data.gz>
-
-=back
+Initializes an empty C<modules/02packages.details.txt.gz>.
 
 =head2 index
 

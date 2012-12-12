@@ -1,6 +1,6 @@
 package CPAN::Local::App::Command::init;
 {
-  $CPAN::Local::App::Command::init::VERSION = '0.009';
+  $CPAN::Local::App::Command::init::VERSION = '0.010';
 }
 
 # ABSTRACT: Initialize an empty repository
@@ -27,7 +27,7 @@ CPAN::Local::App::Command::init - Initialize an empty repository
 
 =head1 VERSION
 
-version 0.009
+version 0.010
 
 =head1 SYNOPSIS
 

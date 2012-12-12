@@ -1,6 +1,6 @@
 package CPAN::Local::Role::Initialise;
 {
-  $CPAN::Local::Role::Initialise::VERSION = '0.009';
+  $CPAN::Local::Role::Initialise::VERSION = '0.010';
 }
 
 # ABSTRACT: Initialize an empty repo
@@ -25,7 +25,7 @@ CPAN::Local::Role::Initialise - Initialize an empty repo
 
 =head1 VERSION
 
-version 0.009
+version 0.010
 
 =head1 DESCRIPTION
 
